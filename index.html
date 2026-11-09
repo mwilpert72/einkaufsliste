@@ -6,14 +6,20 @@
     <title>Einkaufsliste</title>
   </head>
   <body>
-    <div id="app">
+    <main id="app">
       <h1>Einkaufsliste</h1>
-      <form id="formular">
-        <input id="eingabe" type="text" placeholder="Was brauchst du?" />
-        <button type="submit">Hinzufügen</button>
+      <p class="untertitel">Wähle einen Laden und füge Artikel hinzu.</p>
+
+      <nav id="tabs" class="tabs"></nav>
+
+      <form id="formular" class="formular">
+        <input id="eingabe" type="text" autocomplete="off" />
+        <button type="submit" class="primaer">Hinzufügen</button>
       </form>
-      <ul id="liste"></ul>
-    </div>
+
+      <ul id="liste" class="liste"></ul>
+      <p id="leer" class="leer" hidden>Diese Liste ist noch leer.</p>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
